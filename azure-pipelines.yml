@@ -10,10 +10,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
-  webRepository: 'web'
+  webRepository: 'https://github.com/MonikaReszczynska/mslearn-tailspin-spacegame-web-deploy.git'
   tag: '$(Build.BuildId)'
 
 stages:
