@@ -31,7 +31,7 @@ stages:
         command: buildAndPush
         buildContext: $(Build.Repository.LocalPath)
         repository: $(webRepository)
-        dockerfile: '$(Build.SourcesDirectory)/pipeline/Dockerfile'
+        dockerfile: '**/Dockerfile'
         containerRegistry: 'Container Registry Connection'
         tags: |
           $(tag)
