@@ -13,6 +13,8 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  webRepository: 'web'
+  tag: '$(Build.BuildId)'
 
 steps:
 - task: NuGetToolInstaller@1
