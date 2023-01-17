@@ -10,7 +10,7 @@ trigger:
 #   vmImage: 'windows-latest'
 
 variables:
-  webRepository: 'https://github.com/MonikaReszczynska/mslearn-tailspin-spacegame-web-deploy.git'
+  webRepository: 'web'
   tag: '$(Build.BuildId)'
 
 stages:
