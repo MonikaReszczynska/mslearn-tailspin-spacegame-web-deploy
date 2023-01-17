@@ -26,8 +26,8 @@ stages:
       displayName: 'Build and push the image to container registry'
       inputs:
         command: buildAndPush
-        buildContext: $(Build.Repository.LocalPath)
-        repository: $(webRepository)
+        # buildContext: $(Build.Repository.LocalPath)
+        # repository: $(webRepository)
         dockerfile: '**/Dockerfile'
         containerRegistry: 'Container Registry Connection'
         tags: |
