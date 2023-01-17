@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: 'windows-latest'
+# pool:
+#   vmImage: 'windows-latest'
 
 variables:
   webRepository: 'https://github.com/MonikaReszczynska/mslearn-tailspin-spacegame-web-deploy.git'
@@ -26,6 +26,7 @@ stages:
       displayName: 'Build and push the image to container registry'
       inputs:
         command: buildAndPush
+        buildContext: $(Build.SourcesDirectory)
         repository: $(webRepository)
         dockerfile: '**/Dockerfile'
         containerRegistry: 'Container Registry Connection'
